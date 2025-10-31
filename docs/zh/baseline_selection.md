@@ -227,7 +227,7 @@ python tools/test.py -d mmnist -c configs/mmnist/ConvLSTM.py --ex_name mmnist_co
 ### WeatherBench数据集（气象预测）
 - ConvLSTM: `configs/weather/ConvLSTM.py`
 - PhyDNet: `configs/weather/PhyDNet.py`
-- SimVP+gSTA: `configs/weather/simvp/SimVP_gSTA.py`
+- SimVP: `configs/weather/SimVP.py`
 - TAU: `configs/weather/TAU.py`
 
 ## 引用
