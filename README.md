@@ -24,6 +24,7 @@
 [📘Documentation](https://openstl.readthedocs.io/en/latest/) |
 [🛠️Installation](docs/en/install.md) |
 [🚀Model Zoo](docs/en/model_zoos/video_benchmarks.md) |
+[🎯Baseline Models](BASELINES.md) |
 [🤗Huggingface](https://huggingface.co/OpenSTL) |
 [👀Visualization](docs/en/visualization/video_visualization.md) |
 [🆕News](docs/en/changelog.md)
@@ -122,6 +123,19 @@ Please see [get_started.md](docs/en/get_started.md) for the basic usage. Here is
 bash tools/prepare_data/download_mmnist.sh
 python tools/train.py -d mmnist --lr 1e-3 -c configs/mmnist/simvp/SimVP_gSTA.py --ex_name mmnist_simvp_gsta
 ```
+
+## Baseline Model Selection
+
+**New!** We provide a comprehensive guide for selecting baseline models for spatiotemporal prediction tasks. See [BASELINES.md](BASELINES.md) for quick reference or [docs/en/baseline_selection.md](docs/en/baseline_selection.md) ([中文版](docs/zh/baseline_selection.md)) for detailed information.
+
+**Recommended Baselines**:
+- **ConvLSTM**: Classic RNN baseline (15.0M params, MSE: 22.41)
+- **SimVP+gSTA**: Modern CNN baseline (46.8M params, MSE: 15.05)
+- **TAU**: State-of-the-art baseline (44.7M params, MSE: 15.69)
+- **PhyDNet**: Lightweight physics-driven baseline (3.1M params, MSE: 20.35)
+- **PredRNN++**: Advanced RNN baseline (38.6M params, MSE: 14.07)
+
+These baselines cover different model architectures and provide a comprehensive comparison for spatiotemporal prediction research.
 
 ## Tutorial on using Custom Data
 
